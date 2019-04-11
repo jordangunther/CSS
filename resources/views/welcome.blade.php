@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Laravel and Advanced CSS</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -85,13 +85,11 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="/natours">Natours | CSS:Best Practices, Modern CSS Features and semantic HTML markup, Browser Resets, Graceful Degradation, SASS:Style Architecture, BEM Methodology, Responsive code/images</a>
+                    <br>
+                    <a href="/trillo">Trillo | CSS:Fexbox, Custom CSS properties, Masks, SVGs</a>
+                    <br>
+                    <a href="/nexter">Nexter | CSS:Grid</a>
                 </div>
             </div>
         </div>

@@ -14,3 +14,15 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/natours', 'PagesController@index');//->middleware('auth');
+
+Route::get('/natours', function () {
+    return view('natours');
+});
+Route::get('/trillo', function () {
+    return view('trillo');
+});
+Route::get('/nexter', function () {
+    return view('nexter');
+});
