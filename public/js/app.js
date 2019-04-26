@@ -256,15 +256,63 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/sass/natours.scss":
+/*!*************************************!*\
+  !*** ./resources/sass/natours.scss ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/sass/nexter.scss":
+/*!************************************!*\
+  !*** ./resources/sass/nexter.scss ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/sass/trillo.scss":
+/*!************************************!*\
+  !*** ./resources/sass/trillo.scss ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/sass/welcome.scss":
+/*!*************************************!*\
+  !*** ./resources/sass/welcome.scss ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ 0:
-/*!*************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ***!
-  \*************************************************************/
+/*!***********************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/welcome.scss ./resources/sass/natours.scss ./resources/sass/trillo.scss ./resources/sass/nexter.scss ***!
+  \***********************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /home/jgunther/code/CSS/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/jgunther/code/CSS/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/jgunther/code/CSS/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/jgunther/code/CSS/resources/sass/welcome.scss */"./resources/sass/welcome.scss");
+__webpack_require__(/*! /home/jgunther/code/CSS/resources/sass/natours.scss */"./resources/sass/natours.scss");
+__webpack_require__(/*! /home/jgunther/code/CSS/resources/sass/trillo.scss */"./resources/sass/trillo.scss");
+module.exports = __webpack_require__(/*! /home/jgunther/code/CSS/resources/sass/nexter.scss */"./resources/sass/nexter.scss");
 
 
 /***/ })

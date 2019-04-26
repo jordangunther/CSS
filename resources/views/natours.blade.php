@@ -2,11 +2,16 @@
 
 @section('title', 'Natours')
 
-@section('content')
-    <div class="navigation">
-        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+@section('stylesheet')
+    <link rel="stylesheet" href="{{ mix('/css/natours/natours.css') }}">
+@endsection
 
-        <label for="navi-toggle" class="navigation__button">
+@section('content')
+{{--    layouts--}}
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+
+        <label for="nav-toggle" class="navigation__button">
             <span class="navigation__icon">&nbsp:</span>
         </label>
 
@@ -14,18 +19,17 @@
 
         <nav class="navigation__nav">
             <ul class="navigation__list">
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Natous</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Your benefits</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Popular tours</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book now</a></li>
-
             </ul>
         </nav>
     </div>
     <header class="header">
         <div class="header__logo-box">
-            <i class="fas fa-feather white-text fa-5x"></i>
+            <img src="/img/natours/favicon.png" class="header__logo"/>
+{{--            <i class="fas fa-feather white-text fa-5x"></i>--}}
         </div>
         <div class="header__text-box">
             <h1 class="heading-primary">
@@ -61,23 +65,23 @@
                 <div class="col-1-of-2">
                     <div class="composition">
 
-                        <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                        <img srcset="/img/natours/nat-1.jpg 300w, img/natours/nat-1-large.jpg 1000w"
                              sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
                              alt="Photo 1"
                              class="composition__photo composition__photo--p1"
-                             src="img/nat-1-large.jpg">
+                             src="/img/natours/nat-1-large.jpg">
 
-                        <img srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                        <img srcset="/img/natours/nat-2.jpg 300w, img/natours/nat-2-large.jpg 1000w"
                              sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
                              alt="Photo 2"
                              class="composition__photo composition__photo--p2"
-                             src="img/nat-2-large.jpg">
+                             src="/img/natours/nat-2-large.jpg">
 
-                        <img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                        <img srcset="/img/natours/nat-3.jpg 300w, img/natours/nat-3-large.jpg 1000w"
                              sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
                              alt="Photo 3"
                              class="composition__photo composition__photo--p3"
-                             src="img/nat-3-large.jpg">
+                             src="/img/natours/nat-3-large.jpg">
 
                     </div>
                 </div>
@@ -238,8 +242,8 @@
         <section class="section-stories">
             <div class="bg-video">
                 <video class="bg-video__content" autoplay muted loop>
-                    <source src="img/video.mp4" type="video/mp4">
-                    <source src="img/video.webm" type="video/webm">
+                    <source src="/img/natours/video.mp4" type="video/mp4">
+                    <source src="/img/natours/video.webm" type="video/webm">
                     Your browser is not supported!
                 </video>
             </div>
@@ -251,11 +255,11 @@
             <div class="row">
                 <div class="story">
                     <figure class="story__shape">
-                        <img srcset="img/nat-8-small.jpg 500w, img/nat-8.jpg 2000w"
+                        <img srcset="/img/natours/nat-8-small.jpg 500w, img/natours/nat-8.jpg 2000w"
                              sizes="(max-width: 56.25em) 36.66666vw, (max-width: 37.5em) 75vw, 500px"
                              alt="Falcon"
                              class="story__image"
-                             src="img/nat-8.jpg">
+                             src="/img/natours/nat-8.jpg">
 
                         {{--                        <img src="https://images.unsplash.com/photo-1442155701645-79487c6fa95f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Falcon" class="story__image">--}}
                         <figcaption class="story__caption">Mary Smith</figcaption>
@@ -272,11 +276,11 @@
             <div class="row">
                 <div class="story">
                     <figure class="story__shape">
-                        <img srcset="img/nat-9-small.jpg 500w, img/nat-9.jpg 2000w"
+                        <img srcset="/img/natours/nat-9-small.jpg 500w, img/natours/nat-9.jpg 2000w"
                              sizes="(max-width: 56.25em) 36.66666vw, (max-width: 37.5em) 75vw, 500px"
                              alt="Falcon"
                              class="story__image"
-                             src="img/nat-9.jpg">
+                             src="/img/natours/nat-9.jpg">
                         {{--                        <img src="https://images.unsplash.com/photo-1442155701645-79487c6fa95f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Falcon" class="story__image">--}}
                         <figcaption class="story__caption">Jack Wilson</figcaption>
                     </figure>
@@ -342,8 +346,8 @@
     <footer class="footer">
         <div class="footer__logo-box">
             <picture class="footer__logo">
-                <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)">
-                <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" src="img/logo-green-2x.png" alt="Full logo" class="footer__logo">
+                <source srcset="/img/natours/logo-green-small-1x.png 1x, img/natours/logo-green-small-2x.png 2x" media="(max-width: 37.5em)">
+                <img srcset="/img/natours/logo-green-1x.png 1x, img/natours/logo-green-2x.png 2x" src="/img/natours/logo-green-2x.png" alt="Full logo" class="footer__logo">
             </picture>
         </div>
         <div class="row">
@@ -360,7 +364,7 @@
             </div>
             <div class="col-1-of-2">
                 <p class="footer__copyright">
-                    Built by <a href="#" class="footer__link">Jordan Gunther</a> for his online course <a href="#"
+                    Built by <a href="#" class="footer__link">Jonas Schmedtmann</a> for his online course <a href="https://www.udemy.com/advanced-css-and-sass/"
                                                                                                           class="footer__link">Advanced CSS and Sass</a>. Copyright &copy; by Jonas Schmedtmann. You are 100% allowed to use this webpage for both personal and commercial use, but NOT to claim it as your own design. A credit to the original author, Jonas Schmedtmann, is of course highly appreciated!
                 </p>
             </div>
@@ -370,16 +374,16 @@
     <div class="popup" id="popup">
         <div class="popup__content">
             <div class="popup__left">
-                <img srcset="img/nat-8-small.jpg 500w, img/nat-8.jpg 2000w"
+                <img srcset="/img/natours/nat-8-small.jpg 500w, img/natours/nat-8.jpg 2000w"
                      sizes="(max-width: 56.25em) 36.66666vw, (max-width: 37.5em) 75vw, 500px"
                      alt="Tour photo"
                      class="popup__image"
-                     src="img/nat-8.jpg">
-                <img srcset="img/nat-9-small.jpg 500w, img/nat-9.jpg 2000w"
+                     src="/img/natours/nat-8.jpg">
+                <img srcset="/img/natours/nat-9-small.jpg 500w, img/natours/nat-9.jpg 2000w"
                      sizes="(max-width: 56.25em) 36.66666vw, (max-width: 37.5em) 75vw, 500px"
                      alt="Tour photo"
                      class="popup__image"
-                     src="img/nat-9.jpg">
+                     src="/img/natours/nat-9.jpg">
             </div>
             <div class="popup__right">
                 <a href="#section-tours" class="popup__close">&times;</a>

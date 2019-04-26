@@ -1,97 +1,34 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layout')
 
-        <title>Laravel and Advanced CSS</title>
+@section('title', 'CSS')
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+@section('stylesheet')
+    <link rel="stylesheet" href="{{ mix('/css/welcome/welcome.css') }}">
+@endsection
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
+@section('content')
+    <div class="welcome-header">
+        <h1 class="heading-1">Advanced CSS and Sass: Flexbox, Grid, Animations and More!</h1>
+        <p class="welcome-header__paragraph">https://www.udemy.com/advanced-css-and-sass</p>
+    </div>
 
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="/natours">Natours | CSS:Best Practices, Modern CSS Features and semantic HTML markup, Browser Resets, Graceful Degradation, SASS:Style Architecture, BEM Methodology, Responsive code/images</a>
-                    <br>
-                    <a href="/trillo">Trillo | CSS:Fexbox, Custom CSS properties, Masks, SVGs</a>
-                    <br>
-                    <a href="/nexter">Nexter | CSS:Grid</a>
-                </div>
+    <h2 class="heading-2">Projects</h2>
+    <div class="projects">
+        <a href="/natours/" class="project-card project-card--natours">
+            <img src="/img/welcome/natours.png" alt="Natours Screenshot" class="project-card__img">
+            <div class="project-card__description">
+                <p>Custom float layouts, animations, Sass, BEM</p>
             </div>
-        </div>
-    </body>
-</html>
+        </a>
+        <a href="/trillo/" class="project-card project-card--trillo">
+            <img src="/img/welcome/trillo.png" alt="Trillo Screenshot" class="project-card__img">
+            <span class="project-card__description">Flex</span>
+        </a>
+        <a href="/nexter/" class="project-card project-card--nexter">
+            <img src="/img/welcome/nexter.png" alt="Nexter Screenshot" class="project-card__img">
+            <span class="project-card__description">
+                <span>Grid</span>
+            </span>
+        </a>
+    </div>
+@endsection

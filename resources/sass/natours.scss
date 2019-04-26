@@ -1,0 +1,51 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+
+// Bootstrap
+//@import '~bootstrap/scss/bootstrap';
+
+
+//Style Architecture
+
+// Abstracts
+// Global mixins, functions, variables and other reusable items that can be used in all partials
+@import 'natours/abstracts/functions';
+@import 'natours/abstracts/mixins';
+@import 'natours/abstracts/variables';
+
+// Base
+// Global styles, resets, typographies, utility classes that can be used on all pages
+@import 'natours/base/animations';
+@import 'natours/base/base';
+@import 'natours/base/typography';
+@import 'natours/base/utilities';
+
+// Components
+// Styles for self-contained components
+@import 'natours/components/button';
+@import 'natours/components/bg-video';
+@import 'natours/components/card';
+@import 'natours/components/composition';
+@import 'natours/components/feature-box';
+@import 'natours/components/form';
+@import 'natours/components/popup';
+@import 'natours/components/story';
+
+// Layout
+// Styles for larger layout components like footers, grids, headers, navigations
+@import 'natours/layout/footer';
+@import 'natours/layout/grid';
+@import 'natours/layout/header';
+@import 'natours/layout/navigation';
+
+// Pages
+// Styles specific to the page. Will typically be sections with paddings. May also include components that are one offs or won't be used on other pages.
+@import 'natours/pages/home';
+
+
+
+
+

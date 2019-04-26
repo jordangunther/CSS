@@ -13,5 +13,9 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
+    .sass('resources/sass/welcome.scss', 'public/css/welcome')
+    .sass('resources/sass/natours.scss', 'public/css/natours')
+    .sass('resources/sass/trillo.scss', 'public/css/trillo')
+    .sass('resources/sass/nexter.scss', 'public/css/nexter')
     .extract()
     .version();

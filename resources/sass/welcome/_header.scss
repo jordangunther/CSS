@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% -> 1 rem = 10px
+
+  @media only screen and (max-width: 75em) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: 40em) {
+    font-size: 40%;
+  }
+}
+
+
+.welcome-header {
+  height: 80vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/../../img/welcome/cssHtmlJavascript.jpeg');
+  background-size: cover;
+  background-position: center;
+
+  .heading-1 {
+    font-weight: 300;
+    width: 70rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    align-self: end;
+
+    color: #fff;
+    font-size: 4.5rem;
+
+    @media only screen and (max-width: 40em) {
+      width: 90%;
+    }
+  }
+
+  &__paragraph {
+    align-self: start;
+    color: #fff;
+    font-size: 1.2rem;
+  }
+}
+
+.heading-2 {
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 300;
+  grid-column: 1 / 4;
+  align-self: start;
+}
+
+.projects {
+  padding: 6rem 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 4rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.project-card {
+  position: relative;
+  z-index: 10;
+  display: grid;
+  text-decoration: none;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: all .2s;
+
+  &:hover {
+    transform: translateY(-1rem);
+  }
+
+
+  &--natours {
+    background: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8));
+  }
+
+  &--trillo {
+    background: linear-gradient(to right bottom, #FF3366, #BA265D);
+  }
+
+  &--nexter {
+    background: linear-gradient(to right bottom, #c69963, #B28451);
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__description {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    height: 15rem;
+  }
+}
+
+

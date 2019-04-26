@@ -49,17 +49,17 @@
 }
 
 .book {
-    background-image: linear-gradient(105deg, rgba($color-white, .9) 0, rgba($color-white, .9) 50%, transparent 50%), url(/img/nat-10.jpg);
+    background-image: linear-gradient(105deg, rgba($color-white, .9) 0, rgba($color-white, .9) 50%, transparent 50%), url(/img/natours/nat-10.jpg);
     border-radius: $border-radius;
     box-shadow: $shadow-dark;
     background-size: cover;
 
     @include respond(tab-land) {
-        background-image: linear-gradient(105deg, rgba($color-white, .9) 0, rgba($color-white, .9) 65%, transparent 65%), url(/img/nat-10.jpg);
+        background-image: linear-gradient(105deg, rgba($color-white, .9) 0, rgba($color-white, .9) 65%, transparent 65%), url(/img/natours/nat-10.jpg);
     }
 
     @include respond(tab-port) {
-        background-image: linear-gradient(to right, rgba($color-white, .9) 0, rgba($color-white, .9) 100%), url(/img/nat-10.jpg);
+        background-image: linear-gradient(to right, rgba($color-white, .9) 0, rgba($color-white, .9) 100%), url(/img/natours/nat-10.jpg);
     }
 
     &__form {
